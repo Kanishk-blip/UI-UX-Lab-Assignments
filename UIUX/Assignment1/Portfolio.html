@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishk Kumar Agarwal - Portfolio</title>
+    <style>
+        /* General Body and Font Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for all content */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Header and Main Heading */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header p.tagline {
+            color: #555;
+            font-style: italic;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            text-align: center;
+            padding: 10px 0;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #555;
+            padding: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #007BFF;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #007BFF;
+            border-left: 5px solid #007BFF;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* About Me Section */
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows content to wrap on small screens */
+        }
+
+        .about-me img {
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            object-fit: cover;
+        }
+
+        .about-me p {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Table Styling for Education */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* List Styling for Skills */
+        .skills-list {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e2e8f0;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-weight: 500;
+        }
+
+        /* Projects Section */
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            color: #444;
+        }
+
+        /* Contact Section */
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Main Website Heading -->
+    <header>
+        <h1>Kanishk Kumar Agarwal</h1>
+        <p class="tagline">
+            <b>AI & Software Enthusiast</b> | LeetCode Competitor | MERN Stack Developer
+        </p>
+    </header>
+
+    <!-- Internal Navigation Links -->
+    <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section 1: About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQFxdJWhUlvH5A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723460444705?e=1758758400&v=beta&t=jhfkGWCbhBGkmKtMQDt63TEhcb5jUnQ0f6P4lkGSIcI" alt="A profile photo of Kanishk Agarwal" width="150" height="150" title="Kanishk Agarwal's Profile Photo">
+            <p>
+                As a passionate computer science student with a <strong>9.11 CGPA</strong>, I have a strong foundation in problem-solving and software development. My experience includes an <mark>AI research internship</mark> with Thapar Institute of Engineering and the University of Queensland, Australia. I am a competitive coder with a pupil rating on Codeforces and have solved over 430 problems across various platforms, including over 250 on LeetCode. I specialize in the <em>MERN tech stack</em> and have applied my skills to develop impactful projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2: Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.E. in Computer Science</td>
+                    <td>Thapar Institute of Engineering</td>
+                    <td>2023 - Present</td>
+                    <td>9.11</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job-entry">
+            <h3>AI Research Intern</h3>
+            <p><b>Thapar Institute of Engineering and University of Queensland (Australia)</b></p>
+            <p>2024</p>
+            <p><i>Collaborated on an AI research project, contributing to the field of artificial intelligence.</i></p>
+        </div>
+    </section>
+
+    <!-- Section 4: Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Artificial Intelligence</li>
+            <li>MERN Stack (MongoDB, Express, React, Node.js)</li>
+            <li>Oracle SQL</li>
+            <li>Problem Solving & Algorithms</li>
+            <li>Data Structures</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Section 5: Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Loan Application System</h3>
+            <p>
+                A <mark>group project</mark> developed using the MERN tech stack. This system includes an AI agent to assist bankers in making informed decisions about loan approvals.
+            </p>
+            <p>
+                <a href="#"><u>Project Link</u></a>
+            </p>
+        </div>
+        <div class="project">
+            <h3>Blood Camp Management System</h3>
+            <p>
+                This project was created for my DBMS course, using MERN and Oracle SQL. It helps manage blood donation camps efficiently.
+            </p>
+            <p>
+                <a href="#"><u>Project Link</u></a>
+            </p>
+        </div>
+        <div class="project">
+            <h3>NASA Hackathon</h3>
+            <p>
+                I was part of a team that made it to the Top 10 in the Noida region during the NASA hackathon.
+            </p>
+            <p>
+                <a href="#"><u>Event Link</u></a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 6: Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at the following:</p>
+        <div class="contact-info">
+            <p>Email: <b>kagarwal_be23@thapar.edu</b></p>
+            <p>
+                LinkedIn: <a href="https://www.linkedin.com/in/kanishk-agarwal-505782289/" target="_blank">linkedin.com/in/kanishk-agarwal...</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Kanishk Kumar Agarwal</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
