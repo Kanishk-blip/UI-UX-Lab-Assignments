@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Escapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #00695c;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #00897b;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #004d40;
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-caption {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+             Escapes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Destination Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/519330110/photo/taj-mahal-agra-india-monument-of-love-in-blue-sky.jpg?s=612x612&w=0&k=20&c=Uma6Q7KduznA6jUKcSquFP1iHHiw8UXcZEYVLONrmaQ=" alt="The Taj Mahal in Agra, India">
+                <div class="gallery-item-caption">
+                    <h3>Taj Mahal, India</h3>
+                    <p>A timeless monument of love and architectural marvel.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/534757407/photo/backwaters-of-kerala.jpg?s=612x612&w=0&k=20&c=R3qbyk5bJmYmI-u3hnITQR7CBoyYc0Uok3W4BfYoZUw=" alt="Backwaters of Kerala, India">
+                <div class="gallery-item-caption">
+                    <h3>Kerala Backwaters, India</h3>
+                    <p>Relaxing houseboat cruises on tranquil backwaters.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Manali_City.jpg" alt="Snowy mountains in Manali, India">
+                <div class="gallery-item-caption">
+                    <h3>Manali, India</h3>
+                    <p>Adventure and serenity in the heart of the Himalayas.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://plus.unsplash.com/premium_photo-1661962958462-9e52fda9954d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5kYW1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Blue waters of Andaman Islands">
+                <div class="gallery-item-caption">
+                    <h3>Andaman Islands, India</h3>
+                    <p>Pristine beaches and azure waters for a perfect escape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

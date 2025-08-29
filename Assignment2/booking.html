@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Escapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #00695c;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #00897b;
+        }
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #004d40;
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        .booking-form label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .booking-form button {
+            background-color: #00695c;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .booking-form button:hover {
+            background-color: #00897b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Escapes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Book Your Dream Trip</h2>
+        <form action="#" method="post" class="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="e.g., Manali, Kerala, etc." required>
+
+            <label for="package">Select a Package:</label>
+            <select id="package" name="package">
+                <option value="none" disabled selected>-- Select a Package --</option>
+                <option value="himalayan">Himalayan Trek Adventure</option>
+                <option value="kerala">Kerala Backwater Bliss</option>
+                <option value="golden">Golden Triangle Tour</option>
+                <option value="andaman">Romantic Andaman Escape</option>
+                <option value="northeast">Lush Green Northeast</option>
+            </select>
+            
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+
+</body>
+</html>
