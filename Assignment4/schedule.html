@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - TechFest 2025</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            margin: 5px 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #e2e2e2;
+        }
+
+        main {
+            padding: 2rem 1rem;
+        }
+
+        h1, h2 {
+            color: #007bff;
+            text-align: center;
+        }
+        
+        /* NEW: Audio Message Section */
+        .audio-message {
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .audio-message audio {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Schedule Page Specific Styling */
+        .schedule-table {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow-x: auto; /* Ensures table is responsive */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden; 
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #555;
+            font-weight: bold;
+        }
+        
+        /* Pseudo-class applied to table row */
+        tr:hover {
+            background-color: #e9f5ff;
+        }
+        
+        td:last-child {
+            font-weight: bold;
+        }
+        
+    
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact & FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="audio-message">
+            <h2>A Quick Guide for Participants</h2>
+            <audio controls>
+                <source src="audio/welcome-64347.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section class="schedule-table">
+            <h1>Event Schedule</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Venue</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>Auditorium</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM - 4:00 PM</td>
+                        <td>Code-a-thon Challenge</td>
+                        <td>CS Lab 101</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 1:00 PM</td>
+                        <td>Robo-Wars Heats</td>
+                        <td>Main Ground</td>
+                        <td>Upcoming</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM - 5:00 PM</td>
+                        <td>Web Design Sprint</td>
+                        <td>IT Lab 203</td>
+                        <td>Upcoming</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 PM</td>
+                        <td>Closing Ceremony</td>
+                        <td>Auditorium</td>
+                        <td>Upcoming</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+   
+</body>
+</html>
